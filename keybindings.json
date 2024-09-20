@@ -86,19 +86,19 @@
     "when": "vim.mode == 'Normal' && editorTextFocus"
   },
   {
-    "key": "space c s",
+    "key": "space f s",
     "command": "workbench.action.gotoSymbol",
-    "when": "vim.mode == 'Normal' && editorTextFocus"
-  },
-  {
-    "key": "space b d",
-    "command": "workbench.action.closeActiveEditor",
     "when": "vim.mode == 'Normal' && editorTextFocus"
   },
   {
     "key": "space f f",
     "command": "workbench.action.quickOpen",
     "when": "vim.mode == 'Normal' && (editorTextFocus || !inputFocus)"
+  },
+  {
+    "key": "space t x",
+    "command": "workbench.action.closeActiveEditor",
+    "when": "vim.mode == 'Normal' && editorTextFocus"
   },
   {
     "key": "space g d",
@@ -122,11 +122,6 @@
     "args": {
       "commands": ["workbench.view.scm", "workbench.scm.focus"]
     }
-  },
-  {
-    "key": "ctrl-n",
-    "command": "editor.action.addSelectionToNextFindMatch",
-    "when": "(vim.mode == 'Normal' || vim.mode == 'Visual') && (editorTextFocus || !inputFocus)"
   },
 
   // File Explorer
@@ -197,6 +192,16 @@
     "key": "ctrl-t",
     "command": "workbench.action.terminal.toggleTerminal",
     "when": "vim.mode == 'Normal' && (editorTextFocus || !inputFocus) || terminalFocus"
+  },
+  //Copilot
+  {
+    "key": "space c e",
+    "command": "github.copilot.toggleCopilot",
+    "when": "vim.mode == 'Normal' && (editorTextFocus || !inputFocus)"
+  },
+  {
+    "key": "space c d",
+    "command": "github.copilot.toggleCopilot",
+    "when": "vim.mode == 'Normal' && (editorTextFocus || !inputFocus)"
   }
 ]
-
