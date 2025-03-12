@@ -194,17 +194,6 @@
     "command": "workbench.action.terminal.toggleTerminal",
     "when": "vim.mode == 'Normal' && (editorTextFocus || !inputFocus) || terminalFocus"
   },
-  //Copilot
-  {
-    "key": "space c e",
-    "command": "github.copilot.toggleCopilot",
-    "when": "vim.mode == 'Normal' && (editorTextFocus || !inputFocus)"
-  },
-  {
-    "key": "space c d",
-    "command": "github.copilot.toggleCopilot",
-    "when": "vim.mode == 'Normal' && (editorTextFocus || !inputFocus)"
-  },
   {
     "key": "ctrl+shift+space",
     "command": "-editor.action.triggerParameterHints",
