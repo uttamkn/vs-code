@@ -196,12 +196,25 @@
   //Copilot
   {
     "key": "space c e",
-    "command": "github.copilot.toggleCopilot",
+    "command": "github.copilot.completions.enable",
     "when": "vim.mode == 'Normal' && (editorTextFocus || !inputFocus)"
   },
   {
     "key": "space c d",
-    "command": "github.copilot.toggleCopilot",
+    "command": "github.copilot.completions.disable",
     "when": "vim.mode == 'Normal' && (editorTextFocus || !inputFocus)"
+  },
+  {
+    "key": "ctrl+shift+space",
+    "command": "-editor.action.triggerParameterHints",
+    "when": "editorHasSignatureHelpProvider && editorTextFocus"
+  },
+  {
+    "key": "ctrl+shift+space",
+    "command": "workbench.action.showCommands"
+  },
+  {
+    "key": "ctrl+shift+p",
+    "command": "-workbench.action.showCommands"
   }
 ]
