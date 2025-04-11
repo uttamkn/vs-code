@@ -1,6 +1,12 @@
 {
-  "code-runner.runInTerminal": true,
+  "windsurf.chatFontSize": "default",
+  "windsurf.rememberLastModelSelection": false,
+  "windsurf.openRecentConversation": false,
+  "windsurf.explainAndFixInCurrentConversation": false,
+  "windsurf.autocompleteSpeed": "fast",
+  "windsurf.enableTabToJump": true,
   "workbench.iconTheme": "vscode-icons",
+  "code-runner.runInTerminal": true,
   "liveServer.settings.CustomBrowser": "chrome",
   "liveServer.settings.donotShowInfoMsg": true,
   "vsicons.dontShowNewVersionMessage": true,
@@ -55,5 +61,14 @@
   "[cpp]": {
     "editor.defaultFormatter": "xaver.clang-format"
   },
-  "prettier.configPath": ".prettierrc"
+  "prettier.configPath": ".prettierrc",
+  "git.openRepositoryInParentFolders": "always",
+  "[python]": {
+    "editor.defaultFormatter": "charliermarsh.ruff"
+  },
+  "remote.autoForwardPortsSource": "hybrid",
+  "pylint.enabled": true,
+  "pylint.args": [
+    "--disable=missing-docstring,invalid-name,unused-argument,unused-import,wildcard-import,line-too-long,unnecessary-pass,duplicate-code,broad-exception-caught"
+  ]
 }
