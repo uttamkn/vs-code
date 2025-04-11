@@ -1,124 +1,66 @@
 {
-
-
-
   "code-runner.runInTerminal": true,
-
-
-
-
-
-
   "workbench.iconTheme": "vscode-icons",
-
-
   "liveServer.settings.CustomBrowser": "chrome",
-
   "liveServer.settings.donotShowInfoMsg": true,
-
   "vsicons.dontShowNewVersionMessage": true,
-
   "git.autofetch": true,
-
   "editor.linkedEditing": true,
-
   "python.analysis.typeCheckingMode": "basic",
-
   "workbench.startupEditor": "none",
-
   "workbench.editorAssociations": {
-
     "*.md": "vscode.markdown.preview.editor"
-
   },
-
   "explorer.confirmDragAndDrop": false,
-
   "explorer.compactFolders": false,
-
   "git.confirmSync": false,
-
   "editor.defaultFormatter": "esbenp.prettier-vscode",
-
   "[c]": {
-
     "editor.defaultFormatter": "ms-vscode.cpptools"
-
   },
-
   "editor.lineNumbers": "relative",
-
   "editor.formatOnSave": true,
-
   "github.copilot.enable": {
-
     "*": true,
-
     "plaintext": false,
-
     "markdown": false,
-
     "scminput": false
-
   },
-
   "vim.commandLineModeKeyBindings": [],
-
   "workbench.sideBar.location": "right",
-
   "window.menuBarVisibility": "toggle",
-
   "editor.tokenColorCustomizations": {
-
     "[*Light*]": {
-
       "textMateRules": [
-
         {
-
           "scope": "ref.matchtext",
-
           "settings": {
-
             "foreground": "#000"
-
           }
-
         }
-
       ]
-
     },
-
     "[*Dark*]": {
-
       "textMateRules": [
-
         {
-
           "scope": "ref.matchtext",
-
           "settings": {
-
             "foreground": "#fff"
-
           }
-
         }
-
       ]
-
     }
-
   },
-
   "workbench.colorTheme": "Tokyo Night",
-
   "[cpp]": {
-
     "editor.defaultFormatter": "xaver.clang-format"
-
   },
-
-
-  "prettier.configPath": ".prettierrc"
+  "prettier.configPath": ".prettierrc",
+  "git.openRepositoryInParentFolders": "always",
+  "remote.SSH.remotePlatform": {
+    "vocallabs": "linux"
+  },
+  "[go]": {
+    "editor.defaultFormatter": "golang.go"
+  }
+}
