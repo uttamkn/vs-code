@@ -346,5 +346,75 @@
   {
     "key": "ctrl+i",
     "command": "extension.vim_ctrl+i"
+  },
+  {
+    "key": "ctrl+,",
+    "command": "workbench.action.chat.newChat",
+    "when": "chatIsEnabled && inChat && !config.chat.unifiedChatView && chatLocation != 'editing-session'"
+  },
+  {
+    "key": "ctrl+l",
+    "command": "-workbench.action.chat.newChat",
+    "when": "chatIsEnabled && inChat && !config.chat.unifiedChatView && chatLocation != 'editing-session'"
+  },
+  {
+    "key": "ctrl+,",
+    "command": "workbench.action.chat.newEditSession",
+    "when": "chatEditingParticipantRegistered && chatIsEnabled && inChat"
+  },
+  {
+    "key": "ctrl+l",
+    "command": "-workbench.action.chat.newEditSession",
+    "when": "chatEditingParticipantRegistered && chatIsEnabled && inChat"
+  },
+  {
+    "key": "ctrl+,",
+    "command": "expandLineSelection",
+    "when": "textInputFocus"
+  },
+  {
+    "key": "ctrl+l",
+    "command": "-expandLineSelection",
+    "when": "textInputFocus"
+  },
+  {
+    "key": "ctrl+,",
+    "command": "notebook.centerActiveCell",
+    "when": "notebookEditorFocused"
+  },
+  {
+    "key": "ctrl+l",
+    "command": "-notebook.centerActiveCell",
+    "when": "notebookEditorFocused"
+  },
+  {
+    "key": "ctrl+,",
+    "command": "windsurf.prioritized.chat.open",
+    "when": "!terminalFocus && !windsurf.deepwikiPanel.focused"
+  },
+  {
+    "key": "ctrl+l",
+    "command": "-windsurf.prioritized.chat.open",
+    "when": "!terminalFocus && !windsurf.deepwikiPanel.focused"
+  },
+  {
+    "key": "ctrl+,",
+    "command": "windsurf.sendTerminalToChat",
+    "when": "terminalFocus && !windsurf.deepwikiPanel.focused"
+  },
+  {
+    "key": "ctrl+l",
+    "command": "-windsurf.sendTerminalToChat",
+    "when": "terminalFocus && !windsurf.deepwikiPanel.focused"
+  },
+  {
+    "key": "ctrl+,",
+    "command": "deepwiki.attachContext",
+    "when": "windsurf.deepwikiPanel.focused && activeViewlet == 'workbench.view.deepwiki'"
+  },
+  {
+    "key": "ctrl+l",
+    "command": "-deepwiki.attachContext",
+    "when": "windsurf.deepwikiPanel.focused && activeViewlet == 'workbench.view.deepwiki'"
   }
 ]
